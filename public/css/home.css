@@ -1,0 +1,328 @@
+*{
+    /*paleta de cores*/
+    --preto:#24292F;
+    --amarelo:#EBC556;
+    --branco:#F7F9F8;
+    --bege:#F8EACC;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;800;900&display=swap);
+
+}
+
+body{
+    background-color: var(--preto);
+    margin: 2em;
+    font-family: 'Roboto Slab', serif;
+}
+.navBar{
+    border: 1px solid var(--amarelo);
+    padding: 1em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+.navBar ul{
+    display: flex;
+    justify-content: space-around;
+    color: var(--branco);
+    list-style: none;
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+.containerRotulo1{
+    font-size: 1.2em;
+    margin: 0.2em;
+    margin-bottom: 0.3em;
+    display: flex;
+    grid-area: rotulos;
+    color: var(--branco);
+}
+.containerRotulo1 :nth-child(1n){
+    font-weight: 200;
+}
+
+.containerRotulo2{
+    font-size: 1.2em;
+    margin: 0.2em;
+    margin-bottom: 0.3em;
+    display: flex;
+    grid-area: rotulo2;
+    color: var(--branco);
+}
+.containerRotulo2 :nth-child(1n){
+    font-weight: 200;
+}
+.contentDash{
+
+    width: 100%;
+    display: grid;
+    grid-template:
+    "rotulos rotulo2"
+    "sectionPrev sectionRealidade";
+    column-gap: 50px;
+    justify-content:space-between;
+}
+.sectionDespesaPrev, .sectionReceitaPrev{
+
+    display: flex;
+    flex-direction: column;
+}
+.sectionDespesareal, .sectionReceitaReal{
+    display: flex;
+    flex-direction: column;
+
+}
+.sectionDespesaPrev{
+    margin-right: 8em;
+}
+.sectionDespesareal{
+    margin-right: 8em;
+}
+
+.containerPrevs{
+    color: var(--branco);
+    background-color: rgba(235, 197, 86, 10%);
+    padding: 1em 0 1em 0;
+    border-radius: 5px;
+    border: 1px solid var(--amarelo);
+    display: flex;
+    justify-content:space-evenly;
+    width:50em;
+    grid-area: sectionPrev;
+}
+.diplayDespesaPrev{
+    background-color: rgba(36, 41, 47, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1em 0;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    height: 6em;
+    width: 15em;
+}
+.diplayDespesaPrev :nth-last-child(1n) {
+color: #AAAAAA;
+font-size: 2em ;
+font-weight: 200;
+}
+
+.sectionDespesaPrev :nth-child(3n){
+    margin: 0 0 0.3em 0;
+    font-weight: 200;
+}
+.sectionDespesaPrev :nth-child(1n){
+    font-weight: 200;
+}
+.sectionDespesaPrev :nth-child(4n){
+    background-color: rgba(36, 41, 47, 67%);
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    height: 1em ;
+    padding: 1em;
+
+}
+.sectionDespesaPrev :nth-child(5n){
+    background-color: rgba(235, 197, 86, 63%);
+    font-size: 1em;
+    border: none;
+    height: 2em ;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+}
+
+.diplayReceitaPrev{
+    background-color: rgba(36, 41, 47, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1em 0;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    height: 6em;
+    width: 15em;
+}
+.diplayReceitaPrev :nth-child(1n) {
+color: #AAAAAA;
+font-size: 2em ;
+font-weight: 200;
+}
+.sectionReceitaPrev :nth-child(1n){
+    font-weight: 200;
+}
+.sectionReceitaPrev :nth-child(3n){
+    margin: 0 0 0.3em 0;
+    font-weight: 200;
+}
+.sectionReceitaPrev :nth-child(4n){
+    background-color: rgba(36, 41, 47, 67%);
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    height: 1em ;
+    padding: 1em;
+
+}
+.sectionReceitaPrev :nth-child(5n){
+    background-color: rgba(235, 197, 86, 63%);
+    font-size: 1em;
+    border: none;
+    height: 2em ;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+}
+
+
+.containerRealidade{
+    color: var(--branco);
+    background-color: rgba(235, 197, 86, 10%);
+    padding: 1em 0 1em 0;
+    border-radius: 5px;
+    border: 1px solid var(--amarelo);
+    display: flex;
+    justify-content:space-evenly;
+    width:50em;
+    grid-area: sectionRealidade;
+}
+.sectionDespesareal :nth-child(1n){
+    font-weight: 200;
+    color: var(--branco);
+}
+.diplayDespesaReal{
+    background-color: rgba(36, 41, 47, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1em 0;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    height: 6em;
+    width: 15em;
+}
+.diplayDespesaReal :nth-last-child(1n) {
+color: #AAAAAA;
+font-size: 2em ;
+font-weight: 200;
+}
+.sectionDespesareal :nth-child(3n){
+    color: var(--branco);
+    margin: 0 0 0.3em 0;
+    font-weight: 200;
+}
+.sectionDespesareal :nth-child(4n){
+    background-color: rgba(36, 41, 47, 67%);
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    height: 1em ;
+    padding: 1em;
+
+}
+.sectionDespesareal :nth-child(5n){
+    background-color: rgba(235, 197, 86, 63%);
+    font-size: 1em;
+    border: none;
+    height: 2em ;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+}
+
+
+.diplayReceitaReal{
+    background-color: rgba(36, 41, 47, 67%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0 1em 0;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    height: 6em;
+    width: 15em;
+}
+
+.diplayReceitaReal :nth-last-child(1n) {
+color: #AAAAAA;
+font-size: 2em ;
+font-weight: 200;
+}
+.sectionReceitaReal :nth-child(1n){
+    font-weight: 200;
+    color: var(--branco);
+}
+.sectionReceitaReal :nth-child(3n){
+    color: var(--branco);
+    margin: 0 0 0.3em 0;
+    font-weight: 200;
+}
+.sectionReceitaReal :nth-child(4n){
+    background-color: rgba(36, 41, 47, 67%);
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    height: 1em ;
+    padding: 1em;
+
+}
+.sectionReceitaReal :nth-child(5n){
+    background-color: rgba(235, 197, 86, 63%);
+    font-size: 1em;
+    border: none;
+    height: 2em ;
+    border: 1px solid var(--amarelo);
+    border-radius: 5px;
+    color: var(--branco);
+}
+.separete{
+    margin: 2em 0 2em 0;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.separete :nth-child(1n) {
+    color: var(--branco);
+    width:fit-content;
+    font-weight: 200;
+    margin-right: 1em;
+}
+.linha{
+    border: 1px solid  rgba(235, 197, 86, 63%);
+    padding-right: 102.8em;
+    height: 1px;
+}
+
+.containerTable{
+    border: 1px solid  rgba(235, 197, 86, 63%);
+    background-color: rgba(235, 197, 86, 10%);
+    padding: 0.4em;
+    border-radius: 10px;
+    min-height: 25em;
+}
+
+#tbDespesaAdd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid  rgba(235, 197, 86, 63%);
+    background-color: rgba(235, 197, 86, 10%);
+    height: 3em;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 5px 1px 25px #EBC556 ;
+
+}
+.linhatb{
+    color: var(--branco);
+
+}
+td{
+width: 100px;
+padding-right: 30em;
+}
+
